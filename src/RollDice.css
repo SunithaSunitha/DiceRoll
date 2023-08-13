@@ -1,0 +1,44 @@
+.RollDice {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+  }
+  .RollDice-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .RollDice button {
+    align-self: center;
+    width: 15em;
+    padding: 1.5em;
+    /* font-size: 1em; */
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-top: 3em;
+  }
+  
+  .RollDice button:hover {
+    background-color: darkslateblue;
+    cursor: pointer;
+  }
+  @keyframes shakeDice {
+  0%, 100% {
+    transform: translateX(0) rotate(0);
+  }
+  20% {
+    transform: translateX(-5px) rotate(-10deg);
+  }
+  40% {
+    transform: translateX(5px) rotate(10deg);
+  }
+  60% {
+    transform: translateX(-5px) rotate(-10deg);
+  }
+  80% {
+    transform: translateX(5px) rotate(10deg);
+  }
+}
+
